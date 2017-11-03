@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ltsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblNameRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Restaurante" />
+
+            <EditText
+                android:id="@+id/txtNameResturante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Id resturante"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblNameMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Menú" />
+
+            <EditText
+                android:id="@+id/txtNameMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Menú"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+
+            <EditText
+                android:id="@+id/txtPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/lblDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+
+
+            <EditText
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="top|left"
+                android:hint="Descripción del menú"
+                android:inputType="textMultiLine"
+                android:lines="20"
+                android:minLines="5"
+                android:paddingLeft="10dp"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:singleLine="false" />
+
+            <Button
+                android:id="@+id/btnAddMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Guardar"
+                android:textColor="@color/colorWhite"
+                android:textSize="9pt" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
